@@ -1,0 +1,30 @@
+{
+  "name": "onetab-sync",
+  "version": "0.1.0",
+  "description": "upload/download OneTab data to Gist",
+  "main": "index.js",
+  "bin": {
+    "onetab-sync": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel -d lib -s true src/"
+  },
+  "author": "runoshun",
+  "license": "MIT",
+  "repository": "https://github.com/runoshun/onetab-sync",
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "commander": "^2.11.0",
+    "gists": "^1.0.0",
+    "inquirer": "^3.3.0",
+    "leveldown": "^2.0.0",
+    "levelup": "^2.0.0",
+    "sqlite3": "^3.1.13"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0"
+  }
+}
